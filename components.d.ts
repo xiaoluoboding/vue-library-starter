@@ -14,5 +14,7 @@ declare module 'vue' {
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
     Logo: typeof import('./src/components/Logo.vue')['default']
     'Mdi:heart': typeof import('~icons/mdi/heart')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
