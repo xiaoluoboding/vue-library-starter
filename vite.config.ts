@@ -62,7 +62,7 @@ export default defineConfig(({ command, mode }) => {
       {
         name: 'inline-css',
         transform(code, id) {
-          const isCSS = (path: string) => /\.css$/.test(path)
+          const isCSS = (path: string) => /\.(?:css|scss|sass|postcss)$/.test(path)
           if (!isCSS(id)) return
 
           const cssCode = minify(code)
